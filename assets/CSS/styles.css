@@ -34,7 +34,6 @@ body {
 .figure1 {
     position: relative;
     z-index: 1;
-    display: inline-block;
     overflow: hidden;
     background: #527c82;
     text-align: center;
@@ -45,13 +44,11 @@ body {
     padding: 5px;
     max-width: 400px;
     margin: auto;
-    overflow: hidden;
 }
 
 .figure2{
     position: relative;
     z-index: 1;
-    display: inline-block;
     overflow: hidden;
     background: #527c82;
     text-align: center;
@@ -62,13 +59,11 @@ body {
     padding: 5px;
     max-width: 400px;
     margin: auto;
-    overflow: hidden;
 }
 
 .figure3{
     position: relative;
     z-index: 1;
-    display: inline-block;
     overflow: hidden;
     background: #527c82;
     text-align: center;
@@ -79,13 +74,11 @@ body {
     padding: 5px;
     max-width: 400px;
     margin: auto;
-    overflow: hidden;
 }
 
 .figure4{
     position: relative;
     z-index: 1;
-    display: inline-block;
     overflow: hidden;
     background: #527c82;
     text-align: center;
@@ -96,13 +89,11 @@ body {
     padding: 5px;
     max-width: 400px;
     margin: auto;
-    overflow: hidden;
 }
 
 .figure5{
     position: relative;
     z-index: 1;
-    display: inline-block;
     overflow: hidden;
     background: #527c82;
     text-align: center;
@@ -113,12 +104,10 @@ body {
     padding: 5px;
     max-width: 400px;
     margin: auto;
-    overflow: hidden;
 }
 .figure6{
     position: relative;
     z-index: 1;
-    display: inline-block;
     overflow: hidden;
     background: #527c82;
     text-align: center;
@@ -129,7 +118,6 @@ body {
     padding: 5px;
     max-width: 400px;
     margin: auto;
-    overflow: hidden;
 }
 
 figcaption{
@@ -268,27 +256,31 @@ figure:hover p {
 
 header {
     position: sticky;
+    z-index: 2;
     top: 0;
     display: flex;
     border-bottom-right-radius: 2.1875em;
     border-bottom-left-radius: 2.1875em;
     width: 100%;
     padding: 1em 1em 0 2em;
-    background: linear-gradient(180deg, #000000 0, rgba(135, 168, 115, 0.53) 36.83%, rgba(143, 202, 108, 0.17) 100%);
+    background: linear-gradient(to bottom right, #00cc66 0%, #009933 100%);
     border: 1px solid rgba(176, 241, 165, 0.67);
+    border-top: none;
     color: rgba(3, 3, 3, 0.78);
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
-    flex: 1 25%;
     flex: 2 40%;
 }
 
-
-header a:visited{
+header a {
+    text-decoration: none;
     color: black;
 }
 
+header a:visited {
+    color: black;
+}
                                             /*КНОПКА ПОИСКА */
 
 input {
@@ -351,7 +343,7 @@ button:before {
   stroke-dashoffset: 130;
 }
 .svgburg{
-  position:absolute;
+  position:fixed;
   right: 8%;
   top: 25px;
   display: none;
@@ -452,8 +444,8 @@ nav a{
     grid-template-areas: "A" "B" "C";
     grid-template-columns: repeat(3,auto);
     grid-template-rows: auto;
+    z-index: 1;
     display: grid;
-    grid-gap: 1%;
     padding-top: 1%;
     margin-bottom: 2%;
 }
@@ -464,15 +456,15 @@ nav a{
 }
                                    /* КНОПКА ВВЕРХ */
 
-#button{
+#button {
     display: inline-block;
     background-color: #FF9800;
-    width: 50px;    
+    width: 50px;
     height: 50px;
     text-align: center;
     border-radius: 4px;
     position: fixed;
-    bottom: 10%;
+    bottom: 15%;
     right: 6%;
     transition: background-color .3s, opacity .5s, visibility .5s;
     opacity: 0;
@@ -481,7 +473,7 @@ nav a{
 }
 #button::after {
     content: "\f077";
-    font-family: FontAwesome;
+    font-family: "FontAwesome";
     font-weight: normal;
     font-style: normal;
     font-size: 2em;
@@ -564,6 +556,7 @@ nav a{
 .footer-underscore {
     float:left;
     width: 100%;
+    background-color: #5eb075;
 
 }
 @media screen and (max-width: 1350px){
@@ -622,7 +615,7 @@ nav a{
         position: absolute;
         opacity: 1;
         width: 100vw;
-        height:100vh;
+        height:100vh !important;
         align-items: center;
         justify-content: center;
         transition:1s;
@@ -631,7 +624,6 @@ nav a{
 
     .svgburg {
         display: block;
-        position: absolute;
     }
 }
 
@@ -671,8 +663,7 @@ header{
 
 .bg-img {
     flex-direction: row;
-    font-size:0.8em;
-    padding-left: 1em;
+    font-size:0.6em;
     align-content: space-around;
 }
 
@@ -689,6 +680,4 @@ header{
 .col-contact img{
     width: 40px;
 }
-
-                                    }
-                                    
+ }
