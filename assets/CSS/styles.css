@@ -263,7 +263,7 @@ header {
     border-bottom-left-radius: 2.1875em;
     width: 100%;
     padding: 1em 1em 0 2em;
-    background: linear-gradient(to bottom right, #00cc66 0%, #009933 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.94) 0%, rgba(102, 194, 45, 0.82) 45.83%, rgba(143, 202, 108, 0.6) 100%);
     border: 1px solid rgba(176, 241, 165, 0.67);
     border-top: none;
     color: rgba(3, 3, 3, 0.78);
@@ -389,15 +389,17 @@ nav a:visited, link{
 
                                     /* КНОПКИ ПАНЕЛИ НАВИГАЦИИ */
 
-.active{
+.active {
     transform: translateY(0) !important;
     z-index: 2;
+    opacity: 1 !important;
 }
 
-.toggle-button{
+.toggle-button {
 
     gap: 4%;
-    display:none;
+    display: none;
+    opacity: 0.2;
 }
 
 nav a{
@@ -586,6 +588,7 @@ nav a{
 
     .onlogo h1 {
         position: relative;
+        z-index: 3;
         width: 90%;
         margin-left: 20%;
     }

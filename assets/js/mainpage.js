@@ -38,16 +38,8 @@ const a = document.querySelector('.toggle-button');
 
 
 svgburg.addEventListener('click',()=>{
-  if(toggleButton.classList[1] !== 'active') {
-      toggleButton.classList.add('active');
-      wrapper.style.opacity = 0.2;
-      toggleButton.style.opacity = 1;
-  } else {
-      toggleButton.classList.remove('active');
-      wrapper.style.opacity = 1;
-      toggleButton.style.opacity = 0.2;
-      toggleButton.animate({ opacity: "0" },400);
-  }
+    wrapper.style.opacity = toggleButton.classList[1] === 'active' ? 1 : 0.2;
+    toggleButton.classList.toggle('active');
 });
 
 toggleButton.addEventListener("click",()=>{
