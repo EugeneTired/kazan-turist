@@ -15,10 +15,6 @@ $(window).scroll(function() {
 
 
     const burgAnimation = () =>{
-    var burger = document.querySelector('.svgburg')
-    var path1 = document.querySelector('.path1')
-    var path2 = document.querySelector('.path2')
-    var mline = document.querySelector('.mline')
     burger.addEventListener('click',() =>{     
         path1.classList.toggle('cross');
         path2.classList.toggle('cross');
@@ -27,6 +23,10 @@ $(window).scroll(function() {
      )
  
  }
+    var burger = document.querySelector('.svgburg')
+    var path1 = document.querySelector('.path1')
+    var path2 = document.querySelector('.path2')
+    var mline = document.querySelector('.mline')
 burgAnimation();
 
 const toggleButton = document.querySelector('.toggle-button')
@@ -51,6 +51,18 @@ svgburg.addEventListener('click',()=>{
   }
 });
 
+toggleButton.addEventListener("click",()=>{
+  if(toggleButton.classList[1] != undefined){
+      toggleButton.classList.remove('active');
+      wrapper.style.opacity = 1;
+      toggleButton.style.opacity = 0.4;
+      toggleButton.animate({ opacity: "0" },400); 
+        path1.classList.toggle('cross');
+        path2.classList.toggle('cross');
+        mline.classList.toggle('hide');
+  }     
+});
+
 $(document).ready(function(){
 
 
@@ -63,7 +75,6 @@ $(document).ready(function(){
           $(".toggle-button").fadeOut();
           return false;
       });
-
   });
 
 
