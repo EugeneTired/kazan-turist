@@ -53,7 +53,6 @@ svgburg.addEventListener('click',()=>{
 
 $(document).ready(function(){
 
-      $(".toggle-button").css("height", $(document).height());
 
       $(".alert").click(function(){
           $(".toggle-button").fadeIn();
@@ -66,9 +65,5 @@ $(document).ready(function(){
       });
 
   });
-
-  $(window).bind("resize", function(){
-      $(".toggle-button").css("height", $(window).height());
-});
 
 
