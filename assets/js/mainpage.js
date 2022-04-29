@@ -9,8 +9,12 @@ $(window).scroll(function() {
     $('#button').on("click",function(){
         $(window).scrollTop(0);
     });
+
     $('#inpBut').on("focus",function(){
-      $("#but").toggleClass('show');
+      $("#but").add('show');
+    });
+    $('#inpBut').on("focusout",function(){
+      $("#but").remove('show');
     });
 
 
