@@ -42,6 +42,12 @@ const a = document.querySelector('.toggle-button');
 svgburg.addEventListener('click', () => {
     wrapper.style.opacity = toggleButton.classList[1] === 'active' ? 1 : 0.2;
     toggleButton.classList.toggle('active');
+    let body = document.body;
+    if(body.style.overflow != "hidden"){
+        body.style.overflow = 'hidden';
+    } else {
+        body.style.overflow = "auto";
+    }
 });
 
 toggleButton.addEventListener("click", () => {
@@ -52,6 +58,12 @@ toggleButton.addEventListener("click", () => {
         toggleButton.animate({opacity: "0"}, 400);
         path1.classList.toggle('cross');
         path2.classList.toggle('cross');
-        mline.classList.toggle('hide');
+        mline.classList.toggle('hide');   
+        let body = document.body;
+        if(body.style.overflow != "hidden"){
+            body.style.overflow = 'hidden';
+        } else {
+            body.style.overflow = "auto";
+        }
     }
 });

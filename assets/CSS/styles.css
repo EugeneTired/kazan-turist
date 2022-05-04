@@ -295,14 +295,19 @@ header {
     border-bottom-left-radius: 2.1875em;
     width: 100%;
     padding: 1em 1em;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.94) 0%, rgba(102, 194, 45, 0.82) 45.83%, rgba(143, 202, 108, 0.6) 100%);
-    border: 1px solid rgba(176, 241, 165, 0.67);
+    background: rgba(154, 211, 121, 0.836) 100%;
+    border: 1px solid rgba(166, 224, 156, 0.904);
     border-top: none;
     color: rgba(3, 3, 3, 0.78);
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
     flex: 2 40%;
+    transition: background 1s ease-in-out;
+}
+
+header:hover {
+    background:#5eb075;
 }
 
 header a {
@@ -547,7 +552,7 @@ nav a {
 
 /* FOOTER */
 .col {
-    flex: 1;
+    max-width: 21em;
 }
 
 .wrapper {
@@ -565,10 +570,11 @@ nav a {
     align-items: start;
     z-index: 1;
     font-size: 1em;
-    justify-content: flex-start;
+    justify-content: space-between;
     font-family: "segoe print", sans-serif;
     padding: 0 2em 2%;
     flex-wrap: wrap;
+    gap: 4%;
 }
 
 /* ФУТЕР ИСТОЧНИКИ\РАЗРАБОТЧИКИ... */
@@ -610,9 +616,9 @@ nav a {
 /* ФУТЕР ПОДЧЕРКИВАЮЩАЯ ЛИНИЯ */
 
 .footer-underscore {
-    position: absolute;
+    position: relative;
     float: left;
-    width: 25%;
+    width: 105%;
     height: 2px;
     background-color: #5eb075;
 
@@ -727,7 +733,6 @@ nav a {
     .bg-img {
         flex-direction: row;
         font-size: 0.6em;
-        align-content: space-around;
         gap: 4%;
     }
 
