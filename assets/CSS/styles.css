@@ -24,6 +24,7 @@ body {
 
 .cont {
     align-content: space-between;
+    justify-items: center;
     position: relative;
     display: grid;
     width: 90%;
@@ -586,7 +587,7 @@ nav a {
 
 .col-contact > ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 1fr;
 }
 
 .col-contact li {
@@ -727,6 +728,7 @@ nav a {
         flex-direction: row;
         font-size: 0.6em;
         align-content: space-around;
+        gap: 4%;
     }
 
     #button::after {
