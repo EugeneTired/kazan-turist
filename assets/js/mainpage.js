@@ -17,7 +17,7 @@ $('#inpBut').on("focusout", function () {
     $("#but").remove('show');
 });
 
-
+dar
 const burgAnimation = () => {
     burger.addEventListener('click', () => {
             path1.classList.toggle('cross');
@@ -67,3 +67,21 @@ toggleButton.addEventListener("click", () => {
         }
     }
 });
+
+document.onreadystatechange = function () {
+    var state = document.readyState
+    if (state == 'interactive') {
+         wrapper.style.display = 'none';
+         svgburg.style.visibility = 'hidden';
+         document.body.style.background ='white';
+    } else if (state == 'complete') {
+        setTimeout(function(){
+           document.getElementById('loader').style.display ="none";
+           wrapper.style.display = 'grid';
+           svgburg.style.visibility = 'visible';
+           $('body').css({
+            background: "-webkit-gradient(linear, 45% 40%, -20% 10%, from(rgb(102, 164, 23, 0.69)), to(rgb(221, 224, 21, 0.1)))" 
+        });
+        },1000);
+    }
+  }
