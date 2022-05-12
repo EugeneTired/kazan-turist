@@ -17,7 +17,6 @@ $('#inpBut').on("focusout", function () {
     $("#but").remove('show');
 });
 
-dar
 const burgAnimation = () => {
     burger.addEventListener('click', () => {
             path1.classList.toggle('cross');
