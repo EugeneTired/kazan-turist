@@ -22,8 +22,10 @@
     display: grid;
     width: 90%;
     margin: 0 auto;
-    grid-template-areas: "A" "B" "C";
+    grid-template-areas: "A" "B";
+
 }
+
 
 /* ОВЕРЛЕЙ */
 
@@ -453,31 +455,33 @@ nav a {
 /* ГРИД ИНФОРМАЦИЯ*/
 .grid-info {
     position: relative;
-    display: grid;
     width: 95%;
     place-items: center;
-    gap: 10px;
     padding-top: 2%;
-    grid-template-areas:
-    "A B";
+}
+.bgimage {
+    border: 1px solid #a2a9b1;
+    float: right;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/Crem.jpg);
+    position: relative;
+    min-height: 35vh;
+    min-width: 40vw;
+
 }
 
 /* СЕКЦИИ GRID */
 
 [class^="box-"] {
+    display: flex;
+    flex-direction: row;
     background: rgba(240, 213, 213, 0.28);
-    display: grid;
     place-items: center;
     padding-left: 0.5%;
     border-radius: 10px;
-}
-
-.box-1 {
-    grid-area: A;
-}
-
-.box-2 {
-    grid-area: B;
+    gap:1%;
+    margin-bottom: 3%;
 }
 
 /* ФОТО КОНТЕНТ  */
@@ -548,7 +552,7 @@ nav a {
     max-width: 21em;
 }
 
-#wrapper {
+.wrapper {
     min-height: 100vh;
     display: grid;
     grid-template-rows: 1fr auto;
@@ -568,6 +572,7 @@ nav a {
     padding: 0 2em 2%;
     flex-wrap: wrap;
     gap: 4%;
+    position: relative;
 }
 
 /* ФУТЕР ИСТОЧНИКИ\РАЗРАБОТЧИКИ... */
@@ -636,6 +641,17 @@ nav a {
 
 @media screen and (max-width: 872px) {
 
+    .bgimage{
+        min-height: 25vh;
+    }
+    .box-1 {
+        flex-direction: column;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
     .cont {
         grid-template-rows: 0.25fr;
     }
