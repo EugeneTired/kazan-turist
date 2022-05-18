@@ -459,16 +459,7 @@ nav a {
     place-items: center;
     padding-top: 2%;
 }
-.bgimage2 {
-    border: 1px solid #a2a9b1;
-    float: right;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url(../images/hram.jpg);
-    position: relative;
-    min-height: 35vh;
-    min-width: 40vw;
-}
+
 .bgimage {
     border: 1px solid #a2a9b1;
     float: right;
@@ -479,6 +470,46 @@ nav a {
     min-height: 35vh;
     min-width: 40vw;
 
+}
+.bgimage2 {
+    border: 1px solid #a2a9b1;
+    float: right;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/hram.jpg);
+    position: relative;
+    min-height: 35vh;
+    min-width: 40vw;
+}
+.bgimage3{
+    border: 1px solid #a2a9b1;
+    float: right;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/me4et.jpg);
+    position: relative;
+    min-height: 35vh;
+    min-width: 40vw;
+}
+.bgimage4{
+    border: 1px solid #a2a9b1;
+    float: right;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/pamatnik.jpg);
+    position: relative;
+    min-height: 35vh;
+    min-width: 40vw;
+}
+.bgimage5{
+    border: 1px solid #a2a9b1;
+    float: right;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/center.jpg);
+    position: relative;
+    min-height: 35vh;
+    min-width: 40vw;
 }
 .map{
     display: flex;
@@ -661,10 +692,19 @@ nav a {
 @media screen and (max-width: 872px) {
 
     .bgimage{
-        min-height: 25vh;
+        min-height: 15vh;
     }
     .bgimage2{
-        min-height: 25vh;
+        min-height: 23vh;
+    }
+    .bgimage3{
+        min-height: 17vh;
+    }
+    .bgimage4{
+        min-height: 15vh;
+    }
+    .bgimage5{
+        min-height: 16vh;
     }
     .box-1 {
         flex-direction: column;
