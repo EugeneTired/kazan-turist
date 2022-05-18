@@ -43,7 +43,7 @@ figure {
     display: flex;
     flex-flow: column;
     padding: 5px;
-    max-width: 400px;
+    max-width: 450px;
     margin: auto;
 }
 
@@ -58,7 +58,7 @@ figure {
     display: flex;
     flex-flow: column;
     padding: 5px;
-    max-width: 400px;
+    max-width: 450px;
     margin: auto;
 }
 
@@ -73,7 +73,7 @@ figure {
     display: flex;
     flex-flow: column;
     padding: 5px;
-    max-width: 400px;
+    max-width: 450px;
     margin: auto;
 }
 
@@ -88,7 +88,7 @@ figure {
     display: flex;
     flex-flow: column;
     padding: 5px;
-    max-width: 400px;
+    max-width: 450px;
     margin: auto;
 }
 
@@ -103,7 +103,7 @@ figure {
     display: flex;
     flex-flow: column;
     padding: 5px;
-    max-width: 400px;
+    max-width: 450px;
     margin: auto;
 }
 
@@ -118,7 +118,7 @@ figure {
     display: flex;
     flex-flow: column;
     padding: 5px;
-    max-width: 400px;
+    max-width: 450px;
     margin: auto;
 }
 
@@ -391,7 +391,7 @@ button:before {
     z-index: 5;
 }
 
-/* Уголь ЛОГО */
+/* ЛОГО */
 
 .logo span {
     background: initial;
@@ -402,7 +402,7 @@ button:before {
     vertical-align: middle;
 }
 
-/* ЛОГО САЙТА */
+
 
 .logo {
     display: grid;
@@ -606,6 +606,7 @@ nav a {
     text-decoration: underline;
 }
 
+/* ПРЕЛОАДЕР  */
 #loader{
     min-width:100vw;
     min-height:100vh;
@@ -616,7 +617,7 @@ nav a {
 
 }
 
-/* ФУТЕР ПОДЧЕРКИВАЮЩАЯ ЛИНИЯ */
+/* ФУТЕР, ПОДЧЕРКИВАЮЩАЯ ЛИНИЯ */
 
 .footer-underscore {
     position: relative;
@@ -627,6 +628,7 @@ nav a {
 
 }
 
+/* Настройки под разрешения  */
 @media screen and (max-width: 1350px) {
 
     .grid-image {
